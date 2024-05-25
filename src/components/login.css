@@ -22,7 +22,9 @@
 
 button {
   width: 50%;
-  margin-left: 140px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 30px;
   padding: 10px;
   background-color: #FF6240;
   color: #fff;
@@ -43,4 +45,20 @@ button:hover {
   color: red;
   font-size: 14px;
   margin-left: 200px;
+}
+.buttonss{
+  display: flex;
+  
+}
+.myform{
+  display: block;
+}
+.SignUp-card {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }
