@@ -1,0 +1,46 @@
+.login-card {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.input input {
+  margin-left: 70px;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  width: 50%;
+  margin-left: 140px;
+  padding: 10px;
+  background-color: #FF6240;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5e1707;
+}
+.input label {
+  display: block; /* Display the labels as block elements */
+  margin-bottom: 5px; /* Add some space between the label and input */
+}
+
+.input .error {
+  color: red;
+  font-size: 14px;
+  margin-left: 200px;
+}

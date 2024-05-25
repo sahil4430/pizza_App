@@ -1,0 +1,38 @@
+[
+    {"no":1,
+    "Type":"Vegge twist",
+    "img":"./public/pizza/11 Best Vegan Pizza Recipes.jpg",
+    "price":"$16.00",
+    "topping":"Pizza dough, pizza sauce, provolone cheese, mozzarella."
+    },
+    {"no":2,
+    "Type":"Soya , capsicum pizza",
+    "img":"./public/pizza/download (1).jpg",
+    "price":"$9.00",
+    "topping":"Pizza dough, pizza sauce, provolone cheese, mozzarella."
+    },
+    {"no":3,
+    "Type":"Pasta pizza",
+    "img":"./public/pizza/download (2).jpg",
+    "price":"$8.00",
+    "topping":"Pizza dough, pizza sauce, provolone cheese, mozzarella."
+    },
+    {"no":4,
+    "Type":"Panner makhni pizza",
+    "img":"./public/pizza/Get the We Heart It app!.jpg",
+    "price":"$10.00",
+    "topping":"Pizza dough, pizza sauce, provolone cheese, mozzarella."
+    },
+    {"no":5,
+    "Type":"Cheesey pizza",
+    "img":"./public/pizza/Khachapuri Хачапури грузинская выпечка pastry.jpg",
+    "price":"$11.00",
+    "topping":"Pizza dough, pizza sauce, provolone cheese, mozzarella."
+    },
+    {"no":6,
+    "Type":"Bacon , mushroom,and crispy",
+    "img":"./public/pizza/Bacon, mushroom and crispy onion pizza.jpg",
+    "price":"$11.00",
+    "topping":"Pizza dough, pizza sauce, provolone cheese, mozzarella."
+    }
+]

@@ -1,0 +1,67 @@
+.header {
+    background-color: black;
+    padding: 1em; 
+    display: flex; 
+    color: azure;
+    list-style: none;
+    position:fixed,absolute;
+  }
+  
+  .header img:first-child {
+    transition: transform 0.3s ease; 
+  }
+  
+  .header img:first-child:hover {
+    animation: rotateAnimation 1.5s infinite alternate; 
+  }
+  
+  @keyframes rotateAnimation {
+    to {
+      transform: rotate(360deg); 
+    }
+  }
+  .divs {
+    margin-left: 44em;
+    display: flex;
+    align-items: center; /* Align items vertically in the middle */
+  }
+  
+  .divs li a {
+    margin-left: 20px; /* Adjust the margin as needed */
+    color: white; /* Set the text color */
+    cursor: pointer; /* Add pointer cursor on hover */
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+
+  .divs  li a:hover{
+    color: #FF6240;
+  }
+  .b1 {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    margin: 1em;
+    padding: 0.4em;
+    width: 6em;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  .b1:hover{
+    background-color: #FF6240;
+    border: none;
+    
+  }
+  .b2{
+    cursor: pointer;
+    border: none;
+    background-color: #FF6240;
+    color: #fff;
+    margin: 1em;
+    padding: 0.8em;
+    width: 10em;
+    border-radius: 0.3rem;
+  }
+  .b2:hover{
+    background-color: #f48971;
+  }

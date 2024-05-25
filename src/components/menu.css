@@ -1,0 +1,221 @@
+/* Add these imports at the top of your CSS file */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* Rest of your existing styles */
+
+.container{
+    color: orangered;
+    
+    height: 200px;
+    margin-top: 1px;
+    
+}
+.bold{
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 2em;
+    font-family: "Audiowide", sans-serif;
+}
+.it{
+    font-family: cursive;
+    font-weight: 100;
+    color: #ffdb58;
+}
+.con{
+    display: flex;
+}
+
+.img1 {
+    height: 20em;
+    border-radius: 5px;
+}
+.p1{
+    font-size: larger;
+    text-align: center;
+    color: aliceblue;
+}
+.img3{
+    width: 10em;
+    height: 20em;
+    border-radius: 3px;
+
+}
+.img5{
+    width: 1500px;
+
+}
+.row {
+    margin-left:10px;
+    display: flex;
+    align-items: center;
+    margin-top: 500px; /* Adjust the top margin as needed */
+    
+
+  }
+  .slider{
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .slider::-webkit-scrollbar{
+    display: none;
+  }
+.container1{
+    
+    float: right;
+    border: 2px solid #ffdb58;
+    height: 28em;
+    width: 18em;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0.5em;
+}
+.container2{
+    gap: 30px;
+   float: right;
+    
+    border: 2px solid #ffdb58;
+    height: 28em;
+    width: 18em;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.container0{
+    border: 2px solid #e26805;
+
+    border-radius: 300px;
+    height: 400px;
+    width:20em;
+    float: left;
+    margin-left: 0;
+}
+.pizza2{
+    height: 300px;
+    width: 300px;
+}
+
+.pizza1{
+    height: 15em;
+    width: 14em;
+    border-radius: 3px;
+    align-items: center;
+    margin-left: 2em;
+    margin-top: 2em;
+    
+ 
+}
+.title{
+    font-weight: 500;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    color: #ffdb58;
+    font-size: 0.9em;
+    margin: 3px;
+    text-align: center;
+}
+.price{
+    font-weight: 800;
+    font-size: medium;
+    color: #efa211;
+}
+.b7{
+    width: 7em;
+    height: 3em;
+    border: 2px solid #e3e2e0;
+    background-color: transparent;
+    color: #f4eeee;
+    margin-left: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.b7:hover{
+    background-color: #ffdb58;
+
+}
+.grip{
+    display: flex;
+    
+}
+.i1{
+    height: 20em;
+    width: 23em;
+    /* margin: 3px; */
+    border-radius: 10px;
+    margin-left :90px ;
+    
+}
+.p3{
+    color: #e3e2e0;
+}
+.h8{
+    margin: 2px;
+    font-size: larger;
+}
+.h10{
+    background: linear-gradient(45deg, #d8ad90, #ea0d0a);
+
+    /* Set the background-clip property to text */
+    -webkit-background-clip: text; /* For WebKit/Blink browsers */
+    background-clip: text;
+  
+    /* Set the color of the text (fallback for browsers that don't support background-clip) */
+    color: transparent;
+}
+/* Add this CSS to your existing menu.css file */
+
+/* .i1 {
+    transition: transform 0.5s ease-out;
+  }
+  
+  .i1:hover {
+    transform: translateX(20px); 
+  } */
+  .b0 {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    margin: 1em;
+    padding: 1em;
+    width: 10em;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-left: 700px;
+    margin-top: 19px;
+
+  }
+  
+  .b0:hover{
+    background-color: #FF6240;
+    border: none;
+    
+  }
+  .contact {
+    display: flex;
+    margin-left: 3px;
+  }
+  
+  
+  .para {
+   
+    float: right;
+     height: 300px;
+    
+    margin-left: 30px; 
+    margin-top: -7px;
+    
+
+  }
+  .p7{
+    margin-top: -120px;
+  }
+  .footer{
+    margin-top: 100px;
+    width:93em;
+    margin-left: 3px;
+  }
