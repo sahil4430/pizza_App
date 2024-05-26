@@ -2,6 +2,7 @@ import React ,{useState} from 'react';
 import './menu.css';
 import './footer.css';
 import Login from './Login';
+import Slider from './Slider';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -39,7 +40,7 @@ export default function Menu({ onAddToCart }) {
           
         </div>
       <div className='slider'>
-        <div className='container1'>
+        {/* <div className='container1'>
           <img className="pizza1" src='.\download (1).jpg' alt="Pizza Image 3" />
           <h1 className='title'>
             Soya , capsicum pizza
@@ -105,8 +106,10 @@ export default function Menu({ onAddToCart }) {
           <p className='price'>$11.00</p>
           <button className='b7' onClick={handleAddToCart}>Add to Cart</button>
          
-        </div>
+        </div> */}
+        <Slider/>
       </div>
+      
       </div>
       </section>
       <section id='blog'>

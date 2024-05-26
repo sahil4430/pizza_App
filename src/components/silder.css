@@ -1,0 +1,56 @@
+.slider{
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .slider::-webkit-scrollbar{
+    display: none;
+  }
+.container1{
+    
+    float: right;
+    border: 2px solid #ffdb58;
+    height: 28em;
+    width: 18em;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.pizza1{
+    height: 15em;
+    width: 100%;
+    border-radius: 5px;
+}
+.title{
+    font-weight: 500;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    color: #ffdb58;
+    font-size: 0.9em;
+    margin: 3px;
+    text-align: center;
+}
+.price{
+    font-weight: 800;
+    font-size: medium;
+    color: #efa211;
+}
+.b7{
+    width: 7em;
+    height: 3em;
+    border: 2px solid #e3e2e0;
+    background-color: transparent;
+    color: #f4eeee;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.b7:hover{
+    background-color: #ffdb58;
+
+}
