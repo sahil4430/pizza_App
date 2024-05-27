@@ -36,23 +36,18 @@ export default function Navbar() {
         <li><Link to='blog' smooth={true} duration={500}>Blog</Link></li>
         <li><Link to='about' smooth={true} duration={500}>About </Link></li>
         <li><a href='#html'>Contact</a></li>
-      
-       
+        <li>
+          <button className='b2' >
+            <i className="fas fa-shopping-cart"></i>
+            <FontAwesomeIcon icon={faShoppingCart} />  {cartCount}
+          </button>
+        </li>
 <li>
   <Link to='Login' smooth={true} duration={500}>
     <button className='b1'>Log in</button>
   </Link>
 </li>
-
-        <li>
-          
-          <button className='b2' >
-            <i className="fas fa-shopping-cart"></i>
-            <FontAwesomeIcon icon={faShoppingCart} />  {cartCount}
-          </button>
-          
-          
-        </li>
+        
       </div>
     </div>
     <Home></Home>

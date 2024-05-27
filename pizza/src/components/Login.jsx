@@ -79,7 +79,7 @@ export default function Login() {
       ) :( 
         <div className='SignUp-card'>
       <h1>SignUp</h1>
-      <form className='myform' onSubmit={handleSubmit} >
+      <form className='myform' onSubmit={validate} >
         <div className='input'>
           <input id='username' name='username' placeholder='Username'
           onChange={ (e)=>Setname(e.target.value)} />

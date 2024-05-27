@@ -1,6 +1,6 @@
 .header {
     background-color: black;
-    padding: 1em; 
+    padding-right: 10%; 
     display: flex; 
     color: azure;
     list-style: none;
@@ -21,7 +21,7 @@
     }
   }
   .divs {
-    margin-left: 44em;
+    margin-left: 48%;
     display: flex;
     align-items: center; /* Align items vertically in the middle */
   }
@@ -58,8 +58,11 @@
     background-color: #FF6240;
     color: #fff;
     margin: 1em;
-    padding: 0.8em;
-    width: 10em;
+    margin-left: 2em;
+    padding: 0.6sem;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    width: 100%;
     border-radius: 0.3rem;
   }
   .b2:hover{
