@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
-
+import axios from 'axios';
 export default function Login() {
   const [usernameError, setUsernameError] = useState('');
   const [passwordError, setPasswordError] = useState('');
@@ -12,10 +12,14 @@ export default function Login() {
     const user = document.getElementById('username').value;
     const pass = document.getElementById('password').value;
     const email= document.getElementById('Email').value;
-    // const email = emailElement ? emailElement.value : '';
-
-    // Regular expression for email validation
     const emailRegex = /^([a-z0-9\.-]+)@([a-z0-9]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+     const handlesubmit=(e)=>{
+      e.preventDefault()
+      axios.post('mongodb://127.0.0.1:27017/First',{username,Email,password})
+      .then(result =>console.log(result))
+      .catch(err =>console.log(err))
+     }
+     
 
     setUsernameError('');
     setPasswordError('');
