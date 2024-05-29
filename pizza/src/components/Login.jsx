@@ -6,14 +6,20 @@ export default function Login() {
   const [passwordError, setPasswordError] = useState('');
   const [Emailerror, SetEmailError] = useState('');
   const[IsLogin, SetIsLogin] = useState('true');
+
   const[name,Setname]= useState();
     const[Email,SetEmail] = useState();
     const[pswd,Setpswd]=useState();
      const handleSubmit=(e)=>{
       e.preventDefault()
-      axios.post('http://localhost:3001/First',{name,Email,pswd})
-      .then(result =>console.log(result+"done"))
-      .catch(err =>console.log(err+"error"))
+      axios.post('http://localhost:3001/First',{name,Email,
+        password:pswd
+      })
+      .then(result =>{console.log(result+"done"
+      ); alert(`you are signup:${Email}`); window.scrollTo(0,0);
+      SetIsLogin(true)
+     })
+      .catch(err =>{console.log(err+"error")})
      }
   function validate(event) {
     event.preventDefault(); // Prevent default form submission
@@ -100,7 +106,7 @@ export default function Login() {
         <br />
         <div className='buttonss'>
         <button type='submit'onClick={()=>{SetIsLogin(true)}} >Log In</button>
-        <button type='submit' >Signup</button>
+        <button type='submit' onClick={handleSubmit} >Signup</button>
         </div>
       </form>
     </div>

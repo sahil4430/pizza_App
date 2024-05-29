@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Item from './item .json'
 import './silder.css';
-function Slider() {
+function Slider({handleAddToCart}) {
   const[ Record,SetRecord]= useState(Item)
+ 
   return (
     <div>
       
@@ -23,7 +24,7 @@ function Slider() {
               <h1 className='title'>{item.Type}</h1>
               <p>{item.topping}</p>
               <p className='price'>{item.price}</p>
-              <button className='b7' >Add to Cart</button>
+              <button className='b7'onClick={()=>{handleAddToCart()}} >Add to Cart</button>
               </div>
       ))}
         </div>

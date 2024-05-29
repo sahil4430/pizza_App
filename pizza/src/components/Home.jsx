@@ -9,7 +9,7 @@ export default function Home() {
        <div className="home-container">
       <div className="background-text">
         <h3>Welcome</h3>
-        <h1>TRY SOMETHING AMAZIN</h1>
+        <h1>TRY SOMETHING AMAZING</h1>
         <h2>Ordering your fave Pizza is quick and easy with our</h2>
         <h2>app or on our website.</h2>
         <div className='row'>

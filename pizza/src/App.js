@@ -11,10 +11,10 @@ import Addcart from './components/Addcart';
 function App() {
   return (
     <>
-   {/* <body >
+   <body >
    <Navbar/>
-   </body>  */}
-   <Addcart/>
+   </body> 
+   
    </>
   );
 }

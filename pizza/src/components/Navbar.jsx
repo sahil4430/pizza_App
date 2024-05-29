@@ -6,11 +6,9 @@ import { Link, animationscroll as scroll} from 'react-scroll';
 import Menu from './Menu.jsx';
 import Home from './Home.jsx';
 import Login  from './Login.jsx';
+import Addcart from './Addcart.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-
-
-
+// import Addcart from './Addcart.jsx'
 export default function Navbar() {
   const [cartCount, setCartCount] = useState(0);
 
@@ -37,10 +35,7 @@ export default function Navbar() {
         <li><Link to='about' smooth={true} duration={500}>About </Link></li>
         <li><a href='#html'>Contact</a></li>
         <li>
-          <button className='b2' >
-            <i className="fas fa-shopping-cart"></i>
-            <FontAwesomeIcon icon={faShoppingCart} />  {cartCount}
-          </button>
+      <Addcart/>
         </li>
 <li>
   <Link to='Login' smooth={true} duration={500}>
