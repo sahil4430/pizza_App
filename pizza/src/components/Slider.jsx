@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import Item from './item .json'
 import './silder.css';
-function Slider({handleAddToCart}) {
+import { useSelector ,useDispatch } from 'react-redux';
+import { addTocart } from '../feature/cartSlice';
+function Slider() {
   const[ Record,SetRecord]= useState(Item)
- 
+  const item = useSelector((state) => state.allcart.cart)
+  const dispacth =useDispatch();
+  const handleAddToCart = (item) => {
+    dispacth(addTocart(item)); 
+  };
   return (
     <div>
       
@@ -24,7 +30,7 @@ function Slider({handleAddToCart}) {
               <h1 className='title'>{item.Type}</h1>
               <p>{item.topping}</p>
               <p className='price'>{item.price}</p>
-              <button className='b7'onClick={()=>{handleAddToCart()}} >Add to Cart</button>
+              <button className='b7' onClick={() => handleAddToCart({ id: item.no, name: item.Type, price: item.price })}>Add to Cart</button>
               </div>
       ))}
         </div>
