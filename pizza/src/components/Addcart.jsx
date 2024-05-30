@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import'./Addcart.css'
-const Addcart=({ cartCount, handleAddToCart })=>{
+const Acart=()=>{
     const[navwidth,Setwidth]=useState("0");
     const openNav=()=>{
         Setwidth("250px")
@@ -22,10 +22,10 @@ const Addcart=({ cartCount, handleAddToCart })=>{
       </div>
       <button className='b2'onClick={openNav} >
             <i className="fas fa-shopping-cart" ></i>
-            <FontAwesomeIcon icon={faShoppingCart} />  {cartCount}
+            <FontAwesomeIcon icon={faShoppingCart} />  
           </button>
     </div>
   )
 }
 
-export default Addcart
+export default Acart;
