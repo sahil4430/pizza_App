@@ -10,10 +10,9 @@ function App() {
   return (
     <>
    <body >
-   {/* <Navbar/> */}
-   <Cartpage/>
+   <Navbar/>
    </body> 
-   
+   {/* <Cartpage/> */}
    </>
   );
 }

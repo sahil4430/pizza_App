@@ -6,10 +6,9 @@
 
 .container{
     color: orangered;
-    
+     display: inline;
     height: 200px;
     margin-top: 1px;
-    
 }
 .bold{
     color: aliceblue;
@@ -137,14 +136,10 @@
   .contact {
     display: flex;
     margin-left: 3px;
-  }
-  
-  
+  } 
   .para {
-   
     float: right;
      height: 300px;
-    
     margin-left: 30px; 
     margin-top: -7px;
     

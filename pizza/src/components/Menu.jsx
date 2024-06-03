@@ -7,7 +7,13 @@ import Slider from './Slider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-export default function Menu( ) {
+export default function Menu({ onAddToCart }) {
+  const [cartCount, setCartCount] = useState(0);
+  const handleAddToCart = () => {
+    setCartCount(cartCount + 1);
+    onAddToCart(); // Notify the parent component about the cart update
+  };
+  
   return (
    
     <>
@@ -34,7 +40,63 @@ export default function Menu( ) {
           
         </div>
       <div className='slider'>
-        {/*
+        {/* <div className='container1'>
+          <img className="pizza1" src='.\download (1).jpg' alt="Pizza Image 3" />
+          <h1 className='title'>
+            Soya , capsicum pizza
+          </h1>
+          <p>Pizza dough, pizza sauce, provolone cheese, mozzarella.</p>
+          <p className='price'>$9.00</p>
+          <button className='b7' onClick={handleAddToCart}>Add to Cart</button>
+        </div>
+        <div className='container1'>
+          <img className="pizza1" src='.\Get the We Heart It app!.jpg' alt="Pizza Image 3" />
+          <h1 className='title'>
+            Panner makhni pizza
+          </h1>
+          <p>Pizza dough, pizza sauce, provolone cheese, mozzarella.</p>
+          <p className='price'>$10.00</p>
+          <button className='b7'onClick={handleAddToCart} >Add to Cart</button>
+        </div>
+        <div className='container1'>
+          <img className="pizza1" src='.\download (2).jpg' alt="Pizza Image 3" />
+          <h1 className='title'>
+            Pasta pizza
+          </h1>
+          <p> pizza sauce, provolone cheese, mozzarella.</p>
+          <p className='price'>$8.00</p>
+          <button className='b7' onClick={handleAddToCart}>Add to Cart</button>
+        </div>
+        <div className='container1'>
+          <img className="pizza1" src='.\11 Best Vegan Pizza Recipes.jpg' alt="Pizza Image 3" />
+          <h1 className='title'>
+            Vegge twist
+          </h1>
+          <p>Pizza dough, pizza sauce, provolone cheese, mozzarella.</p>
+          <p className='price'>$16.00</p>
+          <button className='b7' onClick={handleAddToCart}>Add to Cart</button>
+        </div>
+
+      <div className='container1'>
+          <img className="pizza1" src='.\Bacon, mushroom and crispy onion pizza.jpg' alt="Pizza Image 3" />
+          <h1 className='title'>
+            Bacon , mushroom,and crispy
+          </h1>
+          <p>Pizza dough, pizza sauce, provolone cheese, mozzarella.</p>
+          <p className='price'>$11.00</p>
+          <button className='b7' onClick={handleAddToCart}>Add to Cart</button>
+        </div>
+        
+        <div className='container1'>
+          <img className="pizza1" src='.\Khachapuri Хачапури грузинская выпечка pastry.jpg' alt="Pizza Image 3" />
+          <h1 className='title'>
+           Cheesey pizza
+          </h1>
+          <p>Pizza dough, pizza sauce, provolone cheese, mozzarella.</p>
+          <p className='price'>$11.00</p>
+          <button className='b7' onClick={handleAddToCart}>Add to Cart</button>
+        </div>
+
         <div className='container2'>
           <img className="pizza1" src='.\What Is New York-Style Pizza_ Learn About This Famous Pizza Style.jpg' alt="Pizza Image 3" />
           <h1 className='title'>
@@ -45,8 +107,9 @@ export default function Menu( ) {
           <button className='b7' onClick={handleAddToCart}>Add to Cart</button>
          
         </div> */}
-        <Slider />
+        <Slider/>
       </div>
+      
       </div>
       </section>
       <section id='blog'>
