@@ -22,10 +22,10 @@ export default function Navbar() {
     <>
     <div className='header'>
       <li>
-        <img src="/nav.png" alt="image" />
+        <img src="/nav.png" alt="image" className='i'/>
       </li>
       <li>
-        <img src="/nav2.png" alt="image" />
+        <img src="/nav2.png" alt="image" className='i2'/>
       </li>
       <div className='divs'>
         <li><Link to='home' smooth={true} duration={500}>Home</Link></li>

@@ -55,6 +55,8 @@ body {
   
   .card-body {
     padding: 20px;
+    
+    z-index: 1;
   }
   
   .product-title {
@@ -102,6 +104,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+   
     /* background-color: #f8f9fa; */
   }
   
@@ -117,6 +120,12 @@ body {
     flex: 2;
     margin-right: 20px;
     height: 550px;
+    overflow-y: scroll;
+
+  }
+  .cartimg{
+    height: 300px;
+    margin-right: 500px;
   }
   .cart-summary {
     flex: 1;

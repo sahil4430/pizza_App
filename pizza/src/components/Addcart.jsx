@@ -7,7 +7,7 @@ import Cartpage from './Cartpage';
 const Acart=()=>{
     const[navwidth,Setwidth]=useState("0");
     const openNav=()=>{
-        Setwidth("1250px")
+        Setwidth("1050px")
     }
     const closeNav = () => {
         Setwidth("0");
