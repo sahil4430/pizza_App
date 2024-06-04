@@ -7,12 +7,7 @@ import Slider from './Slider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-export default function Menu({ onAddToCart }) {
-  const [cartCount, setCartCount] = useState(0);
-  const handleAddToCart = () => {
-    setCartCount(cartCount + 1);
-    onAddToCart(); // Notify the parent component about the cart update
-  };
+export default function Menu() {
   
   return (
    

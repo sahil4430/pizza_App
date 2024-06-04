@@ -30,7 +30,7 @@ function Slider() {
               <h1 className='title'>{item.Type}</h1>
               <p>{item.topping}</p>
               <p className='price'>{item.price}</p>
-              <button className='b7' onClick={() => handleAddToCart({ id: item.no, name: item.Type, price: item.price })}>Add to Cart</button>
+              <button className='b7' onClick={() => handleAddToCart({ id: item.no, name: item.Type, price: item.price,img: item.img })}>Add to Cart</button>
               </div>
       ))}
         </div>

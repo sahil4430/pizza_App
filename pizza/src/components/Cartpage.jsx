@@ -1,38 +1,30 @@
 import React from 'react';
 import './Cartpage.css';
+import { useSelector } from 'react-redux';
 
 const Cartpage = () => {
+  const {cart ,totalQuantity, totalPrice}= useSelector((state)=>state.allcart)
   return (
     <div className="container">
       <div className="cart-container">
         <div className="cart-item card">
-          <li>
-          <img src="path/to/your/image.png" alt="Denim Shirt" />
+          {
+            cart.map((data)=>(
+              <li>
+          <img src= {data.img} alt="pizza" className='img5' />
           <div className="card-body">
-            <h2 className="product-title">Denim Shirt</h2>
-            <p className="product-price">$17.99</p>
+            <h2 className="product-title">{data.name}</h2>
+            <p className="product-price">{data.price}</p>
             <div>
               
               <label htmlFor="quantity">Quantity</label>
               <input type="number" id="quantity" name="quantity" className="quantity-input" defaultValue="1" />
             </div>
-            <button className="btn">Add to Cart</button>
+            {/* <button className="btn">Add to Cart</button> */}
           </div>
           </li>
-          <li>
-          <img src="path/to/your/image.png" alt="Denim Shirt" />
-          <div className="card-body">
-            <h2 className="product-title">Denim Shirt</h2>
-            <p className="product-price">$17.99</p>
-            <div>
-              
-              <label htmlFor="quantity">Quantity</label>
-              <input type="number" id="quantity" name="quantity" className="quantity-input" defaultValue="1" />
-            </div>
-            <button className="btn">Add to Cart</button>
-          </div>
-          </li>
-          
+            ))
+          }
         </div>
         <div className="cart-summary card">
           <h5>Summary</h5>
