@@ -11,7 +11,7 @@ const Cartpage = () => {
           {
             cart.map((data)=>(
               <li>
-          <img src= {data.img} alt="pizza" className='img5' />
+          <img src= {data.img} alt="pizza" />
           <div className="card-body">
             <h2 className="product-title">{data.name}</h2>
             <p className="product-price">{data.price}</p>
